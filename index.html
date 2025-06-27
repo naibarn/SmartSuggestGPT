@@ -6,12 +6,15 @@
   <title>SmartSuggestGPT Chatbot</title>
 
   <!-- เรียก Script Messenger -->
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
 </head>
 <body>
   <h1>SmartSuggestGPT Chatbot</h1>
   <df-messenger
-  oauth-client-id="402158412384-xxxxxxxxxxxxxxxxx.apps.googleusercontent.com"
+  oauth-client-id="402158412384-4io6467qa8qg4b3fjk47shccr5m23klm.apps.googleusercontent.com"
   access-token-name="access_token"
   location="us-central1"
   project-id="gemini-agents-464201"
@@ -23,18 +26,14 @@
   </df-messenger-chat-bubble>
   </df-messenger>
 
-  <style>
-    df-messenger {
-      position: fixed;
-      z-index: 999;
-      right: 16px;
-      bottom: 16px;
-      --df-messenger-font-color: #000;
-      --df-messenger-font-family: Google Sans;
-      --df-messenger-chat-background: #f3f6fc;
-      --df-messenger-message-user-background: #d3e3fd;
-      --df-messenger-message-bot-background: #ffffff;
-    }
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
   </style>
 </body>
 </html>
